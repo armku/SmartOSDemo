@@ -1,18 +1,11 @@
 ﻿#ifndef _IOK0612_H_
 #define _IOK0612_H_
 
-<<<<<<< master
-#include "B8266.h"
-
-// WIFI WRGB调色
-class IOK0612 : public B8266
-=======
 #include "BaseBoard.h"
 #include "Esp8266Module.h"
 
 // WIFI WRGB调色
 class IOK0612 : public BaseBoard, public Esp8266Module
->>>>>>> local
 {
 public:
 	byte	LedsShow;					// LED 显示状态开关  0 刚启动时候的20秒   1 使能   2 失能

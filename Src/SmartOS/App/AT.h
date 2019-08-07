@@ -27,7 +27,6 @@ public:
 	/******************************** 发送指令 ********************************/
 	// 发送指令，在超时时间内等待返回期望字符串，然后返回内容
 	String Send(const String& cmd, cstring expect, cstring expect2 = nullptr, uint msTimeout = 1000, bool trim = true);
-	String SendData(const String& cmd, cstring expect, cstring expect2 = nullptr, uint msTimeout = 100);
 	String Send(const String& cmd, uint msTimeout = 1000, bool trim = true);
 	// 发送命令，自动检测并加上\r\n，等待响应OK
 	bool SendCmd(const String& cmd, uint msTimeout = 1000);
@@ -39,8 +38,6 @@ private:
 
 	// 分析关键字。返回被用掉的字节数
 	uint ParseReply(const Buffer& bs);
-	// 分析GPS数据。返回经度或纬度
-	double GpsParse(const String& str);
 
 	// 引发数据到达事件
 	uint OnReceive(Buffer& bs, void* param);

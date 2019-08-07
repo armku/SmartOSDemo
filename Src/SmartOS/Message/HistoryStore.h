@@ -21,6 +21,8 @@ public:
 	DataHandler OnReport;
 	// 数据存储句柄
 	DataHandler OnStore;
+	// 数据写入句柄
+	EventHandler OnWrite;
 
 	// 初始化
 	HistoryStore();
@@ -28,7 +30,7 @@ public:
 
 	void Set(void* data, int size);
 
-	bool Open();
+	bool Open(bool UseThousand=true);
 	void Close();
 
 	// 写入一条历史数据
@@ -52,6 +54,7 @@ private:
 	void Report();
 	void Store();
 
+	void Process(EventHandler handler);
 	void Process(int len, DataHandler handler);
 };
 

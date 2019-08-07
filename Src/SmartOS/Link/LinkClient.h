@@ -12,7 +12,7 @@
 #include "LinkMessage.h"
 #include "LinkConfig.h"
 
-// 物联客户端
+// 物联客户端。以太网通信
 class LinkClient
 {
 public:
@@ -42,12 +42,8 @@ public:
 	bool Reply(const String& action, int seq, int code, const String& result);
 
 	void Read(int start, int size);
-	void Write();
 	void Write(int start, const Buffer& bs);
 	void Write(int start, byte dat);
-	void History(const Buffer& bs);
-	void Alert(int type);
-	void Alert(int type, const Buffer& bs);
 
 	// 异步上传并等待响应，返回实际上传字节数
 	int WriteAsync(int start, const Buffer& bs, int msTimeout);
@@ -81,9 +77,6 @@ private:
 
 	void OnLogin(LinkMessage& msg);
 	void OnPing(LinkMessage& msg);
-
-	void OnReset(LinkMessage& msg);
-	void OnReboot(LinkMessage& msg);
 
 	void OnRead(LinkMessage& msg);
 	void OnWrite(LinkMessage& msg);

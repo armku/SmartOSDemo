@@ -19,7 +19,6 @@ public:
 	int		Fast;	// 快闪间隔，默认50毫秒
 	int		Slow;	// 慢闪间隔，默认1000毫秒
 	int		Count;	// 剩余快闪次数
-	byte    Mode;   // Mode 0默认闪烁模式 1快闪模式 2慢闪模式 0xff关闭闪烁
 
 	FlushPort();
 	virtual ~FlushPort();

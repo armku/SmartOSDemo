@@ -15,7 +15,6 @@ public:
 	// 打开GPRS
 	NetworkInterface* CreateA67(OutputPort* led = nullptr);
 	NetworkInterface* CreateSIM900A(OutputPort* led = nullptr);
-	NetworkInterface* Create4G(OutputPort* netled = nullptr, OutputPort* dataled = nullptr);
 };
 
 #endif
