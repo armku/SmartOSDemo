@@ -11,11 +11,12 @@
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
       <pCCUsed>5060300::V5.06 update 3 (build 300)::ARMCC</pCCUsed>
+      <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F103VE</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F1xx_DFP.2.1.0</PackID>
+          <PackID>Keil.STM32F1xx_DFP.1.1.0</PackID>
           <PackURL>http://www.keil.com/pack/</PackURL>
           <Cpu>IROM(0x08000000,0x80000) IRAM(0x20000000,0x10000) CPUTYPE("Cortex-M3") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -385,19 +386,9 @@
               <FilePath>.\main.cpp</FilePath>
             </File>
             <File>
-              <FileName>STM32F10xD.lib</FileName>
-              <FileType>4</FileType>
-              <FilePath>..\Lib\STM32F10xD.lib</FilePath>
-            </File>
-            <File>
               <FileName>SmartOS_F1D.lib</FileName>
               <FileType>4</FileType>
               <FilePath>..\SmartOS\SmartOS_F1D.lib</FilePath>
-            </File>
-            <File>
-              <FileName>SmartOS_M3D.lib</FileName>
-              <FileType>4</FileType>
-              <FilePath>..\SmartOS\SmartOS_M3D.lib</FilePath>
             </File>
           </Files>
         </Group>
@@ -408,11 +399,12 @@
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
       <pCCUsed>5060061::V5.06 update 1 (build 61)::ARMCC</pCCUsed>
+      <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F103VE</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F1xx_DFP.2.1.0</PackID>
+          <PackID>Keil.STM32F1xx_DFP.1.1.0</PackID>
           <PackURL>http://www.keil.com/pack/</PackURL>
           <Cpu>IROM(0x08000000,0x80000) IRAM(0x20000000,0x10000) CPUTYPE("Cortex-M3") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -782,24 +774,20 @@
               <FilePath>.\main.cpp</FilePath>
             </File>
             <File>
-              <FileName>STM32F10xD.lib</FileName>
-              <FileType>4</FileType>
-              <FilePath>..\Lib\STM32F10xD.lib</FilePath>
-            </File>
-            <File>
               <FileName>SmartOS_F1D.lib</FileName>
               <FileType>4</FileType>
               <FilePath>..\SmartOS\SmartOS_F1D.lib</FilePath>
-            </File>
-            <File>
-              <FileName>SmartOS_M3D.lib</FileName>
-              <FileType>4</FileType>
-              <FilePath>..\SmartOS\SmartOS_M3D.lib</FilePath>
             </File>
           </Files>
         </Group>
       </Groups>
     </Target>
   </Targets>
+
+  <RTE>
+    <apis/>
+    <components/>
+    <files/>
+  </RTE>
 
 </Project>
